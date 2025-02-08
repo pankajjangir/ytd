@@ -27,7 +27,7 @@
             const videoId = extractVideoId(videoLink);
 
             if (videoId) {
-                window.location.href = `${window.location.origin}${window.location.pathname}watch?v=${videoId}`;
+                window.location.href = `${window.location.origin}${window.location.pathname}?v=${videoId}`;                
             } else {
                 alert('Invalid YouTube video link. Please try again.');
             }
